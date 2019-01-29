@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZZ-pz-hJq">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checkout View Controller-->
+        <scene sceneID="kSa-QL-aah">
+            <objects>
+                <viewController storyboardIdentifier="CheckoutViewController" id="IZZ-pz-hJq" customClass="CheckoutViewController" customModule="ios_multiple_storyboards_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80t-eE-n8d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Of-Ly-kW9">
+                                <rect key="frame" x="150.66666666666666" y="395.66666666666669" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqc-hp-kfm">
+                                <rect key="frame" x="258" y="728" width="101" height="30"/>
+                                <state key="normal" title="Go to Payment"/>
+                                <connections>
+                                    <segue destination="Oho-me-juB" kind="show" id="Rld-By-fAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OmZ-cY-mCE" firstAttribute="trailing" secondItem="Hqc-hp-kfm" secondAttribute="trailing" constant="16" id="BUb-Hz-Cmk"/>
+                            <constraint firstItem="0Of-Ly-kW9" firstAttribute="centerX" secondItem="80t-eE-n8d" secondAttribute="centerX" id="PjR-6S-d0X"/>
+                            <constraint firstItem="0Of-Ly-kW9" firstAttribute="centerY" secondItem="80t-eE-n8d" secondAttribute="centerY" id="Vzk-oj-8aI"/>
+                            <constraint firstItem="OmZ-cY-mCE" firstAttribute="bottom" secondItem="Hqc-hp-kfm" secondAttribute="bottom" constant="20" id="lJv-fI-Sxc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OmZ-cY-mCE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khU-9U-UtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="213.64317841079463"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IY0-1E-qb0">
+            <objects>
+                <viewController id="Oho-me-juB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n0N-ee-zeM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bl-rK-LNC">
+                                <rect key="frame" x="154" y="396" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5bl-rK-LNC" firstAttribute="centerX" secondItem="n0N-ee-zeM" secondAttribute="centerX" id="4vO-0s-QR6"/>
+                            <constraint firstItem="5bl-rK-LNC" firstAttribute="centerY" secondItem="n0N-ee-zeM" secondAttribute="centerY" id="oAw-XM-nDE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DDT-GC-DBF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f03-7J-69q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="214"/>
+        </scene>
+    </scenes>
+</document>
