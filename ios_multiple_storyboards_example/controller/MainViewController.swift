@@ -27,9 +27,11 @@ class MainViewController: UIViewController {
     
     @IBAction func checkoutTapped(_ sender: UIButton) {
         let checkoutController = AppStoryboards.Checkout.viewController(viewControllerClass: CheckoutViewController.self)
+        // Using the navigationController will put a back button on the new view controller
         self.navigationController?.pushViewController(checkoutController, animated: true)
     }
     
+    // this is commented out, but it's implemented using segue in the storyboary by linking to a storyboard reference
 //    @IBAction func profileTapped(_ sender: UIButton) {
 //        let profileController = AppStoryboards.Profile.viewController(viewControllerClass: ProfileViewController.self)
 //        self.navigationController?.pushViewController(profileController, animated: true)
